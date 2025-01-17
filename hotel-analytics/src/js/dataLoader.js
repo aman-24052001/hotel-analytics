@@ -1,24 +1,22 @@
 // src/js/dataLoader.js
 class DataLoader {
     constructor() {
-        this.data = {
-            hotels: null,
-            rooms: null,
-            bookings: null,
-            aggregatedBookings: null,
-            dates: null
-        };
+        // Get the repository name from package.json or window.location
+        this.repoName = 'hotel-analytics/hotel-analytics'; // Change this to your repo name
+        this.basePath = window.location.hostname === 'localhost' 
+            ? '' 
+            : `/${this.repoName}`;
     }
 
     async loadAllData() {
         try {
-            const [hotels, rooms, bookings, aggregatedBookings, dates] = await Promise.all([
-                this.loadCSV('../public/data/dim_hotels.csv'),
-                this.loadCSV('../public/data/dim_rooms.csv'),
-                this.loadCSV('../public/data/fact_bookings.csv'),
-                this.loadCSV('../public/data/fact_aggregated_bookings.csv'),
-                this.loadCSV('../public/data/dim_date.csv')
-            ]);
+            const [hotels, rooms, dates, bookings, aggregatedBookings] = await Promise.all([
+                d3.csv(`${this.basePath}/public/data/dim_hotels.csv`),
+                d3.csv(`${this.basePath}/public/data/dim_rooms.csv`),
+                d3.csv(`${this.basePath}/public/data/dim_date.csv`),
+                d3.csv(`${this.basePath}/public/data/fact_bookings.csv`),
+                d3.csv(`${this.basePath}/public/data/fact_aggregated_bookings.csv`)
+            ])
 
             this.data = {
                 hotels,
