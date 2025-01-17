@@ -1,0 +1,47 @@
+{
+  "name": "hotel-analytics",
+  "version": "1.0.0",
+  "description": "A hospitality dashboard application for analyzing hotel booking data with dynamic filtering and visualization features.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "hotel",
+    "analytics",
+    "dashboard",
+    "react",
+    "csv",
+    "visualization"
+  ],
+  "author": "Aman Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "recharts": "^2.1.9",
+    "material-ui": "^4.12.3",
+    "papa-parse": "^5.3.0",
+    "react-table": "^7.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.24.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
