@@ -2,6 +2,10 @@
 
 A dynamic and responsive web dashboard for analyzing hotel performance metrics, bookings, and revenue data. This application provides interactive visualizations and insights for hotel management and stakeholders.
 
+![image](https://github.com/user-attachments/assets/57a7023a-5ac1-4be9-8344-57782fbedc92)
+![image](https://github.com/user-attachments/assets/4f356fd2-1c58-4c1b-9057-5dfde8f45716)
+![image](https://github.com/user-attachments/assets/bc03a5f2-6ed1-4d89-8731-c1eb482ba014)
+
 ## 📊 Features
 
 - **Real-time Filtering**: Filter data by:
